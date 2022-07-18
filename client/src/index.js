@@ -13,6 +13,8 @@ window.axios = axios;
 
 const container = document.getElementById("root");
 const root = createRoot(container);
+
+// using createStore just for testing porpuses
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 root.render(
